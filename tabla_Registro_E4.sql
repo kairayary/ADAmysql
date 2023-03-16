@@ -24,4 +24,4 @@ select month(fecha_cumpleaños) from registros_personas;
 
 select year(fecha_cumpleaños)  from registros_personas;
 
-select count(*) as recuento from registros_personas where estado_civil= 'Casada';
+select estado_civil,  count(*) as recuento from registros_personas group by estado_civil;
